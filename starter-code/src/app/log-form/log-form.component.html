@@ -1,0 +1,14 @@
+<div>
+  <p>Please fill following fields:</p>
+<div class="">
+  <label for="">Name:</label>
+  <input type="text" name="" [(ngModel)]="newVisit.person" >
+</div>
+<div class="">
+  <label for="">Reason for visit:</label>
+  <input type="text" name="" [(ngModel)]="newVisit.message">
+</div>
+<button (click)="addAccess(newVisit.person, newVisit.message)"> Submit </button>
+</div>
+
+<button (click)="getAccessLog()">Get Access Log</button>
